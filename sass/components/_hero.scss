@@ -1,0 +1,27 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  max-width: 100%;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+  margin: 1em auto;
+
+  &__title {
+    font-size: 56px;
+    text-align: center;
+    padding: 0 32px;
+
+    @include responsive($tablet) {
+      & {
+        font-size: 40px;
+      }
+    }
+  }
+
+  &__subtitle {
+    padding: 16px 32px;
+    text-align: center;
+  }
+}

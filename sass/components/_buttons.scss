@@ -1,0 +1,53 @@
+.main-button {
+  margin-left: 48px;
+  width: max-content;
+  text-align: center;
+
+  a {
+    background-color: $color-sky-blue-lighter;
+    color: $color-white;
+    padding: 16px;
+    border-radius: 36px;
+  }
+
+  &:hover a {
+    background-color: $color-sky-blue-darker;
+    transition: 0.3 ease;
+  }
+
+  @media only screen and (max-width: 1024.9px) {
+    & {
+      text-align: start;
+      margin-left: 0;
+      margin-top: 48px;
+    }
+  }
+}
+
+.button {
+  width: 20%;
+  background-color: $color-sky-blue-lighter;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-sky-blue-darker;
+    transition: 0.3s ease;
+  }
+
+  &--search {
+    position: absolute;
+    top: 15%;
+    left: 75%;
+    padding: 8px;
+    border-radius: 36px;
+    font-size: 16px;
+  }
+
+  &--join {
+    width: 20%;
+    padding: 12px;
+    border-radius: 36px;
+  }
+}

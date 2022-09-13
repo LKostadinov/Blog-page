@@ -1,0 +1,50 @@
+.blog-card {
+  width: 80%;
+  margin: 2em 0;
+
+  a img {
+    width: 100%;
+    height: 250px;
+  }
+
+  img {
+    border-radius: 20px;
+  }
+
+  h2 {
+    padding-top: 8px;
+  }
+
+  p {
+    padding: 16px 0;
+  }
+
+  &__profile {
+    display: flex;
+    margin: 0;
+
+    &__profile-adjust {
+      margin: 0;
+      padding-left: 8px;
+
+      p {
+        padding: 0;
+      }
+    }
+
+    img {
+      border-radius: 50%;
+      height: auto;
+    }
+  }
+}
+
+.footer-card {
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}

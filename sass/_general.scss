@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: $color-light-blue;
+  overflow-x: hidden;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  height: auto;
+  background-color: $color-white;
+  margin-top: 3em;
+  position: relative;
+  border-radius: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-black;
+  position: relative;
+}
+
+.search {
+  position: relative;
+  width: 70%;
+}
+
+.filters {
+  width: 80%;
+  height: 250px;
+  margin: 0 auto;
+  border-top: 2px solid $color-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__center {
+    width: 700px;
+    max-width: 100%;
+    border-top: none;
+    text-align: center;
+    flex-direction: column;
+
+    &__categories {
+      max-width: 100%;
+      margin: 0.5em;
+    }
+  }
+}

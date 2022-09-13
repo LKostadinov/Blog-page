@@ -1,0 +1,48 @@
+.blog-post {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 80%;
+  margin: 2em auto;
+
+  @include responsive(1280px) {
+    .profile img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  @include responsive(1250px) {
+    & {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 80%;
+      margin: 2em auto;
+
+      & profile img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 875.9px) {
+  .blog-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 80%;
+    margin: 2em auto;
+  }
+
+  .profile img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .profile img {
+    width: 50px;
+    height: 50px;
+  }
+}
